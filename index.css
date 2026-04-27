@@ -1,0 +1,169 @@
+ *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+main{
+    max-width: 1920px;
+    width:100%;
+    margin:auto;
+
+}
+
+header{
+    display: flex;
+    gap: 24px;
+    height:44px;
+    align-items: center;
+    justify-content: center;
+    background-color:#F5F5F7CC ;
+}
+.HeaderText{
+    display: flex;
+    gap: 24px;
+    height:44px;
+    align-items: center;
+}
+.HeaderIcon{
+    display: flex;
+    gap: 24px;
+    height:44px;
+    align-items: center;
+}
+.HeaderIcon >img{
+    width:18px;
+    height:18px;
+}
+.donation{
+    width:60%;
+    text-align: center;
+    padding: 20px;
+
+    height:52px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin:auto;
+
+}
+.Hero{
+    width:100%;
+    height:692px;
+    display:flex;
+    justify-content: center;
+    background-image: url(./images/Figure.png);
+    background-position: center;
+    background-size: cover;
+}
+.HeroText{
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+    margin-top: 58px;;
+}
+.HeroText>:first-child{
+    font-size:42px ;
+    color: #F5F5F7;
+}
+.HeroText>:nth-child(2){
+    font-size: 22px;
+    color:#F5F5F7;
+}
+.Buttons{
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+.Buttons>:first-child{
+    width:123px;
+    height:44px;
+    border-radius:999px ;
+    background-color:#0071E3 ;
+    color:#FFFFFF;
+    padding: 12px 20px;
+}
+.Buttons>:nth-child(2){
+    width:68px;
+    height:44px;
+    border-radius:999px ;
+    color:#2997FF;
+    border:1px solid #2997FF;
+    font-size: 16px;
+    padding: 12px 20px;
+
+}
+.HeroContainer{
+    display: flex;
+    flex-direction: column;
+    gap:12x;
+}
+
+.HeroText3{
+    margin-top: 446px;
+}
+.HeroText3{
+    margin-top: 446px;
+}
+
+
+
+
+.Section{
+    width:100%;
+    height:1764px;
+    gap:12px;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+    
+}
+
+
+.box{
+    width:49%;
+    height:580px;
+    position: relative;
+}
+.box>img{
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    object-fit: cover;
+}
+.Box1text{
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+.Box1text>div{
+    font-size:18px ;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: "Regular";
+    text-align: center;
+}
+.Box1text> :last-child>:nth-child(2){
+    border:1px solid #2997FF;
+    background-color:none;
+}
+
+
+
+
+@media(max-width:768px)
+{
+    header{
+        justify-content:space-between ;
+        padding:15px 0px;
+    }
+    .HeaderText{
+        display: none;
+    }
+.HeaderIcon > :last-child{
+    display: none;
+}
+}
