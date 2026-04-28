@@ -1,5 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 * {
   margin: 0;
@@ -83,14 +82,14 @@ header {
   /* margin-top: 0;
   flex-wrap: wrap; */
 }
-.HeroText3{
+.HeroText3 {
   margin-top: 446px;
 }
 .Buttons {
   display: flex;
   gap: 16px;
   justify-content: center;
-  margin-top:20px ;
+  margin-top: 20px;
 }
 .Buttons > :first-child {
   width: 123px;
@@ -114,6 +113,9 @@ header {
   flex-direction: column;
   gap: 12x;
 }
+.HeroContainer>:last-child{
+  display: none;
+}
 
 .HeroText3 {
   margin-top: 446px;
@@ -124,7 +126,6 @@ header {
 
 .Section {
   width: 100%;
-  height: 1764px;
   gap: 12px;
   flex-wrap: wrap;
   justify-content: center;
@@ -132,7 +133,7 @@ header {
 }
 
 .box {
-  width: 49%;
+  width: 48%;
   height: 580px;
   position: relative;
 }
@@ -146,28 +147,29 @@ header {
 }
 
 .Box1text {
+  display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
   z-index: 2;
-  margin-top: 58px;
+  margin-top: 50px;
 }
-.Text1{
-  width:50%;
-  height:33px;
-  background-image: url(images/Heading\ 3\ \(1\).png);
+.Text1 {
+  width: 60%;
+  height: 33px;
   margin-inline: auto;
-  margin-bottom:9px ;
+  margin-bottom: 9px;
+  object-fit: cover;
 }
-.Text2{
-   width: 50%;
-  height:44px;
+.Text2 {
+  width: 50%;
+  height: 44px;
   font-size: 36px;
   font-family: "Inter", sans-serif;
   font-weight: 600;
   font-style: "Semi bold ";
   text-align: center;
-  color:#F5F5F7 ;
+  color: #f5f5f7;
   margin-inline: auto;
   text-align: center;
 }
@@ -180,179 +182,177 @@ header {
   margin-top: 0;
   flex-wrap: wrap;
 }
-.Now{
+.Now {
   font-size: 18px;
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-style: "Regular";
   text-align: center;
-  color:#F5F5F7;
+  color: #f5f5f7;
 }
-.Text3{
-   display: flex;
-   gap:8px;
-   justify-content: center;
+.Text3 {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
 }
-.watch{
-  height:39px;
+.watch {
+  height: 39px;
   font-size: 32px;
   font-family: "Inter", sans-serif;
   font-weight: 700;
   font-style: "Bold";
   text-align: center;
-  color:#000000;
+  color: #000000;
 }
-.SERIES10{
-  height:39px;
+.SERIES10 {
+  height: 39px;
   font-size: 15px;
   font-family: "Inter", sans-serif;
   font-weight: 700;
   font-style: "Bold";
   text-align: center;
-  color:#000000;
+  color: #000000;
 }
 .HelloApple {
-  border: 1px solid red;
-  color:"Linear Gradient";
-  margin-top:324px ;
-  background: linear-gradient(
-    #0090F7
-    #F2416B
-    #BA62FC
-    #F55600
-  );
-  width:50%;
+  color: "Linear Gradient";
+  margin-top: 324px;
+  background: linear-gradient(#0090f7 #f2416b #ba62fc #f55600);
+  width: 50%;
   margin-inline: auto;
   text-align: center;
 }
-.slider{
-   max-width: 1920px;
+.slider {
+  max-width: 1920px;
   height: 668px;
   margin: 0 auto;
-  border: 1px solid red;
   display: flex;
   flex-direction: row;
   gap: 16px;
-  overflow-x: scroll;
+  overflow-x: hidden;
   margin-top: 16px;
 }
-.slide{
+.slide {
   display: flex;
   justify-content: center;
-
-} 
-.Image2{
-    height: 668px;
-    position: relative;
-    top: 0px;
-    left: 0px;
-    display: flex;
-    align-items: end;
-    border: 1px solid green;
+  animation: 10s infinite linear slideMove;
 }
 
-.image2TextStyle{
+@keyframes slideMove {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.Image2 {
+  height: 668px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  align-items: end;
+  border: 1px solid green;
+}
+
+.image2TextStyle {
   position: absolute;
   display: flex;
   z-index: 2;
-  gap:20px;
-  margin-bottom:60px ;
-  margin-left:70px ;
-
+  gap: 20px;
+  margin-bottom: 60px;
+  margin-left: 70px;
 }
-.image2TextStyle>:first-child{
-    width: 133px;
-    height: 44px;
-    border-radius: 999px;
-    background-color: #f5f5f7;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 2;
+.image2TextStyle > :first-child {
+  width: 133px;
+  height: 44px;
+  border-radius: 999px;
+  background-color: #f5f5f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
 }
-.image2TextStyle>:nth-child(2){
-    font-size: 17px;
-    font-weight: 400;
-    font-family: "Inter", sans-serif;
-    font-style: "Regular";
-    line-height: 20px;
-    color:#FFFFFF;
-    display: flex;
-    align-items: center;
+.image2TextStyle > :nth-child(2) {
+  font-size: 17px;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  font-style: "Regular";
+  line-height: 20px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
 }
-.animation{
-  max-width:1920px;
-  height:336px;
+.animation {
+  max-width: 1920px;
+  height: 336px;
   display: flex;
   flex-direction: row;
   overflow-x: scroll;
-  animation: spin 5s infinite linebar;
-
   gap: 16px;
-  margin-top:32px ;
+  margin-top: 32px;
 }
-.animation::-webkit-scrollbar{
-  display: none;
-}
-@keyframes spin{
-  from{translate:0;}
-  to{translate: -100px;}
-}
-.scroll{
-display: flex;
-  animation: spin 5s infinite linebar;
-
-
-}
-.image1Text{
-    position: relative;
-    display: flex;
-}
-.image1TextStyle{
-  width:224px;
-  height:18px;
-   font-size: 14px;
-   line-height: 18px;
-    font-weight: 600;
-    font-family: "Inter", sans-serif;
-    font-style: "Semi Bold";
-    line-height: 20px;
-    color:#FFFFFF;
-    z-index: 2;
-    position: absolute;
-    margin-top: 198px;
-    margin-left:15px ;
-}
-.image2Background{
-  width:417px;
-  height:236px;
-  background-color:#1B2632 ;
-  background-size: cover;
-  position:relative;
-
-}
-.image2Background>img{
-  width:196px;
-  height:196px;
-  margin-top:20px;
-  margin-left:15px ;
-}
-.image2Background>div{
-  position:absolute;
+.scroll {
   display: flex;
-  margin-top:20px;
+  animation: 10s infinite linear slideMove;
+}
+@keyframes slideMove {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.image1Text {
+  position: relative;
+  display: flex;
+}
+.image1TextStyle {
+  width: 224px;
+  height: 18px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  font-style: "Semi Bold";
+  line-height: 20px;
+  color: #ffffff;
+  z-index: 2;
+  position: absolute;
+  margin-top: 198px;
   margin-left: 15px;
 }
-.RNB{
-     font-size: 14px;
+.image2Background {
+  width: 417px;
+  height: 236px;
+  background-color: #1b2632;
+  background-size: cover;
+  position: relative;
+}
+.image2Background > img {
+  width: 196px;
+  height: 196px;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+.image2Background > div {
+  position: absolute;
+  display: flex;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+.RNB {
+  font-size: 14px;
   font-weight: 600;
-    font-family: "Inter", sans-serif;
-    font-style: "Semi Bold";
-    line-height: 20px;
-    color:#FFFFFF;
-    margin-right:129px;
-    display: flex;
-    align-items: center;
+  font-family: "Inter", sans-serif;
+  font-style: "Semi Bold";
+  line-height: 20px;
+  color: #ffffff;
+  margin-right: 129px;
+  display: flex;
+  align-items: center;
 }
 
 @media (max-width: 768px) {
@@ -366,12 +366,19 @@ display: flex;
   .HeaderIcon > :last-child {
     display: none;
   }
-  .HeroContainer>:last-child{
-      display: none;
+  .HeroContainer > :nth-child(3) {
+    display: none;
   }
-  .box1{
-    width:100%;
+  .HeroContainer>:last-child{
+    display: block;
+  }
 }
 
-
+@media (max-width: 390px) {
+  .box {
+    width: 100%;
+  }
+  .HeroContainer>:last-child{
+    display: none;
+  }
 }
